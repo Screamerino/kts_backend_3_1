@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: set project_path
-        run: echo "PROJECTPATH=/home/runner/work/kts_backend_3_1" >> $GITHUB_ENV
+        run: echo "PROJECTPATH=/home/runner/work/kts_backend_3_1/kts_backend_3_1" >> $GITHUB_ENV
 
       - name: import db
         run:  export PGPASSWORD="$POSTGRES_PASSWORD"; psql --host="$POSTGRES_HOST" --port="$POSTGRES_PORT" --username="$POSTGRES_USER" --d="$POSTGRES_DATABASE" < "$PROJECTPATH/tests/data/demo.sql"

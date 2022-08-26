@@ -6,6 +6,7 @@ select flight_no , scheduled_arrival - scheduled_departure duration  from flight
 order by 2
 limit 5
 """
+
 #  flight_no | duration
 # -----------+----------
 #  PG0235    | 00:25:00
